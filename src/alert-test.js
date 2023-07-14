@@ -40,6 +40,7 @@ export default function AlertTestForm() {
       <input onChange={handleChange} value={formData.timeout} min={0} className="w-full" type="number" required name="timeout" id="timeout" placeholder="Auto dismiss (in seconds)" />
 
       <button className="mt-6 w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Show alert</button>
+      <button className="mt-6 w-full bg-gray-200 hover:bg-gray-300 text-gray-900 py-2 px-4 rounded" type="button" onClick={clearAlerts}>Clear alerts</button>
     </form>
   );
 };
